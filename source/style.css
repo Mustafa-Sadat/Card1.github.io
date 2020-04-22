@@ -1,0 +1,86 @@
+body{
+    background-image: url('3.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:70vh;
+
+    margin: 0;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
+.box{
+    width:60%;
+    margin:0 auto;
+   
+    padding:50px;
+    text-align: center;
+    align-items: center;
+   
+}
+
+.container {
+    position: relative;
+    width: 50%;
+    height:340px;
+    display:flex;
+    margin:40px;
+    margin-top:130px;
+  
+  }
+  .flex{
+      display: flex;
+  }
+  
+
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+    height:340px;
+  }
+  
+  .overlay1 {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgb(11, 219, 202);
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlay1 {
+    bottom: 0;
+    height: 100%;
+  }
+
+  .overlay2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(11, 219, 202);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlay2 {
+    height: 100%;
+  }
+  
+  .text {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
